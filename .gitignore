@@ -1,0 +1,20 @@
+# Secrets — НИКОГДА не коммитить!
+.env
+*.session
+*.session-journal
+
+# Data & logs
+data/
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

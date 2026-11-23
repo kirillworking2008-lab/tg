@@ -1,0 +1,11 @@
+services:
+  forwarder:
+    build: .
+    container_name: tg-forwarder
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Сессия сохраняется между рестартами — не нужно вводить код заново
+      - ./data:/app/data
+    # Логи: docker compose logs -f forwarder
